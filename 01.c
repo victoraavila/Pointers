@@ -27,5 +27,12 @@ int main(int argc, char *argv[]){
     printf("\nThe value stored in the integer variable is: %d\n", a);
     printf("DEREFERENCING: The value stored in the int variable that the pointer points to is: %d\n", *p);
 
+    // Changing the value of the 'a' variable using the pointer and derefencing
+    // p = address; *p = value stored at address
+    *p = 8;
+
+    // Getting the new value of the 'a' variable
+    printf("\nThe value stored in the integer variable now is: %d\n", a);
+
     return 0;
 }
