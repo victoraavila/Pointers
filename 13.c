@@ -6,6 +6,8 @@
 
 void myOwnPrint(char c[]){ // For the compiler, char c[] = char *c
 
+    printf("The pointer to char has %ld bytes of size.\n\n", sizeof(c));
+
     int i = 0;
     while (*(c + i) != '\0'){ // Could be c[i]
         

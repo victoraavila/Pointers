@@ -38,7 +38,7 @@ int main(int argc, char *argv[]){
 
     p[0] = 'A';
 
-    printf("The first element of the char array now is %c (or %c) (or %c).\n", *(p), p[0], c[0]);
+    printf("The first element of the char array now is %c (or %c) (or %c) (or %c).\n", *(p), p[0], c[0], *(c));
     printf("The complete char array now is %s.\n", c);
 
     return 0;
