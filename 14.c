@@ -29,7 +29,7 @@ int main(int argc, char *argv[]){
     // Constants CANNOT be modified. Such operation gives a runtime error.
 
     char *p = "Hello";
-    //p[0] = 'a'; // Not allowed, because the pointer to char points to a constant
+    //p[0] = 'A'; // Not allowed, because the pointer to char points to a constant
 
     char c[20] = "Hello";
     myOwnPrint(c);
