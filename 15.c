@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
     // int *p2 = B;
 
     // The following would be all right
-    // It defines a pointer to a 1D array of 3 integers
+    // It defines a pointer to a 1D array of 3 integers (the first one of the matrix)
 
     int (*p2)[3] = B;
 
