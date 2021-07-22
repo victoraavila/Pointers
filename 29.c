@@ -18,6 +18,7 @@ int *add(int *a, int *b){
     // Creating the int *c pointer by allocating a 4-bytes memory block on the Heap
     
     int *c = (int *) malloc(sizeof(int));
+    printf("'c' is a pointer to int that stores the following address from the Heap: %p.\n", c);
 
     *c = (*a) + (*b);
 
@@ -29,7 +30,7 @@ int *add(int *a, int *b){
 
 int main(int argc, char *argv[]){
 
-    // Pointers as function returns - THIS CODE IS THE SOLUCTION TO THE PREVIOUS ONE
+    // Pointers as function returns - THIS CODE IS THE SOLUTION TO THE PREVIOUS ONE
 
     int x = 2, y = 4;
 
@@ -39,6 +40,8 @@ int main(int argc, char *argv[]){
     
     printf("\nThe address of 'x' in main() is %p.\n", &x);
     printf("\nThe sum of x and y is %d.\n", *ptr);
+
+    free(ptr);
 
     return 0;
 
